@@ -18,7 +18,7 @@ public class Employee : IQuittable
     public void Quit()
     {
         // 🎤 Our custom implementation: print a dramatic resignation message
-        Console.WriteLine($"{Name} has decided to quit the company. 🎉 Time for new adventures!");
+        Console.WriteLine($"{Name} has decided to quit the company!");
     }
 }
 
@@ -28,7 +28,7 @@ class Program
     static void Main(string[] args)
     {
         // 🧑‍💻 Create an Employee object and give it a name
-        Employee employee = new Employee() { Name = "Alice" };
+        Employee employee = new Employee() { Name = "Nada" };
 
         // 🔄 Step 5: Use polymorphism
         // Even though 'employee' is an Employee, we can treat it as an IQuittable because Employee implements IQuittable.
